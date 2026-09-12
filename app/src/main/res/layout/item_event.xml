@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_gravity="center"
+    >
+
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!--  THIS PAGE IS FOR RENDER OF THE EVENTS INFO     -->
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+
+    <TextView
+        android:id="@+id/eventNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Name"
+        android:textColor="@color/orange"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/eventDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  /  /    "
+        android:textSize="14sp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/eventHourTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"/>
+
+    <ImageButton
+        android:id="@+id/buttonModify"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/pencil"
+        app:iconTint="@color/orange"
+        android:drawableTint="@color/orange"
+        android:drawableTintMode="src_in"/>
+
+    <ImageButton
+        android:id="@+id/buttonDelete"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/cross"/>
+
+</LinearLayout>

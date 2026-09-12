@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentPROFILE">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--LINEAR LAYOUT DE LA PAGE-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <!--Page Title : PROFILE-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Profile"
+            android:textSize="25sp"
+            android:fontFamily="@font/chewy"
+            android:gravity="center"/>
+
+        <!--Layout of all the elements UNDER TITLE-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--Layout of profile pic + your infos-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginBottom="15dp">
+
+
+
+                <!--PROFILE PIC-->
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profilePicw"
+                    android:background="@color/clearOrange"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:strokeWidth="5dp"
+                    app:strokeColor="@color/orangeProgressBar"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:padding="2dp"
+                    android:src="@drawable/user"
+
+                    />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/camera" />
+
+
+                <!--        LAYOUT OF THE USER INFOS        -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp">
+
+                    <!--TITLE : YOUR INFOS-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="Your infos"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/chewy"
+                        android:gravity="center"/>
+
+                    <!--LAYOUT OF THE TEXT PSEUDO / MAIL / PASSWORD  -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="start"
+                            android:text="Pseudo :"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="start"
+                            android:text="Mail :"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="start"
+                            android:text="Password :"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <!--LAYOUT OF THE PET INFOS-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text="Your pet infos"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/chewy"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtpetName"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="start"
+                    android:text="Your pet name : "
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtpetAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="start"
+                    android:text="Your pet age : "
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtpetGenre"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="start"
+                    android:text="Your pet genre : "
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtpetHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="start"
+                    android:text="Your pet height (in cm) : "
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtpetWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="start"
+                    android:text="Your pet weight (in kg) : "
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtpetType"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="start"
+                    android:text="Your pet type : "
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imagePetType"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/dog"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

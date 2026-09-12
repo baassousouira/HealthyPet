@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="event_types">
+        <item>Groomer</item>
+        <item>Vet</item>
+        <item>Park</item>
+        <item>Meds</item>
+    </string-array>
+
+</resources>

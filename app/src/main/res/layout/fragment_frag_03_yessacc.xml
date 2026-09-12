@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frag_03_yessacc">
+
+    <TextView
+        android:id="@+id/titlefragyessacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chewy"
+        android:text="Welcome Back"
+        android:textColor="#756055"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="418dp"
+        android:layout_height="401dp"
+        android:src="@drawable/animals__pic__fourth__page__yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlefragyessacc"
+        app:layout_constraintVertical_bias="0.634" />
+
+    <EditText
+        android:id="@+id/pseudoyessaccInput"
+        android:layout_width="250dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="enter your pseudo"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlefragyessacc" />
+
+    <EditText
+        android:id="@+id/passwordyessaccInput"
+        android:layout_width="252dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:hint="enter your password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pseudoyessaccInput"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <TextView
+        android:id="@+id/passwordtxtyessacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password :"
+        android:textColor="#E86513"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/passwordyessaccInput"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pseudotxtyessacc"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <TextView
+        android:id="@+id/pseudotxtyessacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Pseudo :"
+        android:textColor="#E96513"
+        app:layout_constraintEnd_toStartOf="@+id/pseudoyessaccInput"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlefragyessacc" />
+
+    <Button
+        android:id="@+id/nextbtnyessacc"
+        android:layout_width="89dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#E96513"
+        android:fontFamily="@font/chewy"
+        android:text="next"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordyessaccInput"
+        app:layout_constraintVertical_bias="0.962" />
+
+    <Button
+        android:id="@+id/gobackbtnyessacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:text="Go Back"
+        android:textColor="#756055"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextbtnyessacc"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordyessaccInput"
+        app:layout_constraintVertical_bias="0.963"
+        app:strokeColor="#756055"
+        app:strokeWidth="1dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

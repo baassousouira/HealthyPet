@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/drawer_border"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Profile Section-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:padding="16dp"
+        android:background="@drawable/header_bkg"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+        <!--icone user-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user"
+            android:paddingBottom="10dp"
+            android:paddingLeft="13dp"
+            android:id="@+id/userIconeNav"/>
+
+        <!--text "user pseudo"-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Pseudo"
+            android:textStyle="bold"
+            android:textColor="@color/orangeTITLE"
+            android:textSize="20sp"
+            android:id="@+id/userPseudoNav">
+        </TextView>
+    </LinearLayout>
+
+
+    <!--Logout Section-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orangeTITLE"
+            android:text="Log Out"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/logoutsvg"
+            android:drawablePadding="8dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

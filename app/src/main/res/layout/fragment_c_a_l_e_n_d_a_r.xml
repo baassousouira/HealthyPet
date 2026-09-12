@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".FragmentCALENDAR"
+    android:orientation="vertical">
+
+    <!-- Titre de la page Calendar -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chewy"
+        android:text="Calendar"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <!-- calendar -->
+    <CalendarView
+        android:id="@+id/calendarView2"
+        android:layout_width="match_parent"
+        android:layout_height="308dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/clearOrange"
+        android:foregroundTint="@color/app_image_background"
+        android:onClick="test"
+        android:selectedDateVerticalBar="@color/yellow"
+        android:selectedWeekBackgroundColor="@color/clearOrange" />
+
+    <!-- title of the events -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chewy"
+        android:text="What's planned ?"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+
+    <!-- recyclerView to display the events (and with java code)  -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewEvents"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbars="vertical" />
+
+
+</LinearLayout>

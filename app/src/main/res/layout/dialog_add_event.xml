@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/ic_launcher_background">
+
+    <!--android:background="@drawable/background_task">-->
+
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!--  THIS PAGE IS FOR THE EVENTS INFO SELECTION     -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <!--info EVENT (spinner) / HOUR / DATE + BUTTON MODIFY and DELETE-->
+
+    <LinearLayout
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/app_image_background">
+
+        <!--PICK THE EVENT-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/chewy"
+            android:text="Select an event  :"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/orange"/>
+
+        <!-- SPINNER event -->
+        <Spinner
+            android:id="@+id/spinnerEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="15dp"
+            android:entries="@array/event_types"
+            />
+        <!-- DIVIDER -->
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="15dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/black" />
+
+
+        <!--PICK THE DATE-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/chewy"
+            android:text="Enter the date :"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/orange"/>
+
+        <!-- SPINNER DATE -->
+        <DatePicker
+            android:id="@+id/inputDATE"
+            android:layout_width="wrap_content"
+            android:layout_height="139dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:textAlignment="center" />
+        <!-- DIVIDER -->
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="15dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/black" />
+
+
+        <!--PICK THE TIME-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/chewy"
+            android:text="Enter the time :"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/orange"/>
+
+        <!-- SPINNER HOUR -->
+        <TimePicker
+            android:id="@+id/inputHOUR"
+            android:layout_width="wrap_content"
+            android:layout_height="139dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="14sp"
+            android:timePickerMode="spinner" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

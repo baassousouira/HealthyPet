@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentWORK"
+    android:padding="30dp">
+
+    <!-- HOME SECTION LAYOUT -->
+
+
+
+    <!--HERE IS FOR ALL 3 Tasks + image of animal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="0dp">
+
+
+    <!--HERE IS FOR THE IMAGE VIEW-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/backgroun_animal"
+        android:paddingBottom="0dp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+
+
+        <!--NAME / AGE / HEIGHT / WEIGHT / GENRE-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="25dp">
+
+            <!--NAME-->
+            <TextView
+                android:id="@+id/nameofpet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:fontFamily="@font/chewy"/>
+            <!--Age-->
+            <TextView
+                android:id="@+id/ageofpet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:fontFamily="@font/chewy"/>
+            <!--Height-->
+            <TextView
+                android:id="@+id/heightofpet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:fontFamily="@font/chewy"/>
+            <!--Weight-->
+            <TextView
+                android:id="@+id/weightofpet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:fontFamily="@font/chewy"/>
+            <!--Genre-->
+            <TextView
+                android:id="@+id/genreofpet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Genre"
+                android:fontFamily="@font/chewy"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/petIMG"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:background="@drawable/dog" />
+    </LinearLayout>
+
+
+
+
+    <!--SECTION TITLE : WHAT S PLANNED FOR TODAY ?-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="@font/chewy"
+        android:text="What's planned for today ?"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+        <!--BUTTON GAME-->
+        <Button
+            android:id="@+id/btn_game_HOME_Section"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/orange"
+            android:text="Games"
+            android:fontFamily="@font/chewy"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp" />
+
+        <!--BUTTON WORK-->
+        <Button
+            android:id="@+id/btn_work_HOME_Section"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/orange"
+            android:text="Work"
+            android:fontFamily="@font/chewy"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp" />
+
+        <!--BUTTON CALENDAR-->
+        <Button
+            android:id="@+id/btn_calendar_HOME_Section"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/orange"
+            android:text="Planning"
+            android:fontFamily="@font/chewy"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp" />
+
+        <!--BUTTON METEO-->
+        <Button
+            android:id="@+id/btn_meteo_HOME_Section"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/orange"
+            android:text="Meteo"
+            android:fontFamily="@font/chewy"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

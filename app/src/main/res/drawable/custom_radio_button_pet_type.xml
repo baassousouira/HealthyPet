@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--This file defines a selector for RadioButton drawables based on their
+    checked state. It associates different drawable resources for selected and
+    unselected states for each pet type.-->
+
+    <!-- DOG -->
+    <item android:drawable="@drawable/dog_icon_selected" android:state_checked="true" />
+    <item android:drawable="@drawable/dog_icon_unselected" />
+
+    <!-- CAT -->
+    <item android:drawable="@drawable/cat_icon_selected" android:state_checked="true" />
+    <item android:drawable="@drawable/cat_icon_unselected" />
+
+    <!-- TURTLE -->
+    <item android:drawable="@drawable/turtle_icon_selected" android:state_checked="true" />
+    <item android:drawable="@drawable/turtle_icon_unselected" />
+
+    <!-- RABBIT -->
+    <item android:drawable="@drawable/rabbit_icon_selected" android:state_checked="true" />
+    <item android:drawable="@drawable/rabbit_icon_unselected" />
+</selector>

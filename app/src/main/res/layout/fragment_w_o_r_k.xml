@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentWORK"
+    android:padding="30dp">
+
+    <!-- WORK SECTION LAYOUT -->
+
+
+
+    <!--HERE IS FOR ALL 3 Tasks + image of animal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="0dp">
+
+
+        <!--HERE IS FOR THE IMAGE VIEW-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/backgroun_animal"
+            android:paddingBottom="0dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/petIMG"
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:background="@drawable/dog" />
+        </LinearLayout>
+
+
+
+
+        <!--SECTION TITLE : WORK-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:fontFamily="@font/chewy"
+            android:text="Today's Work"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+
+
+        <!--HERE FOR TASK 1 // find out more about my pet-->
+        <LinearLayout
+            android:id="@+id/background_task2"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:background="@drawable/background_task"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="22dp"
+            android:layout_marginBottom="20dp">
+
+            <!--HERE IS FOR img / progress bar/ 0/0  SECTION -->
+            <LinearLayout
+                android:layout_width="311dp"
+                android:layout_height="35dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/books"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp" />
+
+                <ProgressBar
+                    android:id="@+id/progress_task_infosPet"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:max="100"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/custom_progressbar" />
+
+
+                <TextView
+                    android:id="@+id/txtnbrInfoPet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/chewy"
+                    android:paddingTop="4dp"
+                    android:text="0/1"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!--HERE IS FOR text task / ok button  SECTION -->
+            <LinearLayout
+                android:layout_width="311dp"
+                android:layout_height="38dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/chewy"
+                    android:paddingRight="60dp"
+                    android:text="Find out more about my pet"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnOKtaskInfoPet"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/chewy"
+                    android:text="OK"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    <!--HERE IS TASK 2 SECTION //// work the current trick -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:paddingLeft="22dp"
+            android:id="@+id/background_task"
+            android:background="@drawable/background_task"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+
+            <!--HERE IS FOR img / progress bar/ 0/0  SECTION -->
+            <LinearLayout
+                android:layout_width="311dp"
+                android:layout_height="35dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/trick"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="20dp"/>
+
+                <ProgressBar
+                    android:id="@+id/progress_task_TRICK"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/custom_progressbar"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"/>
+
+
+                <TextView
+                    android:id="@+id/txtTrick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="0/4"
+                    android:fontFamily="@font/chewy"
+                    android:textSize="15sp"
+                    android:paddingTop="4dp"/>
+            </LinearLayout>
+
+            <!--HERE IS FOR text task / ok button  SECTION -->
+            <LinearLayout
+                android:layout_width="311dp"
+                android:layout_height="38dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/chewy"
+                    android:paddingRight="90dp"
+                    android:text="Work the current trick"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnOKtaskTRICK"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:text="OK"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/chewy"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    <!--HERE IS 3rd TASK SECTION //// brush my pet -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:paddingLeft="22dp"
+        android:id="@+id/background_taskBrush"
+        android:background="@drawable/background_task"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+
+        <!--HERE IS FOR img / progress bar/ 0/0  SECTION -->
+        <LinearLayout
+            android:layout_width="311dp"
+            android:layout_height="35dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/brosse"
+                android:paddingRight="10dp"
+                android:paddingLeft="20dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarTASKbrosse"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/custom_progressbar"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"/>
+
+
+            <TextView
+                android:id="@+id/txtNbrBrosse"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0/8"
+                android:fontFamily="@font/chewy"
+                android:textSize="15sp"
+                android:paddingTop="4dp"/>
+        </LinearLayout>
+
+        <!--HERE IS FOR text task / ok button  SECTION -->
+        <LinearLayout
+            android:layout_width="311dp"
+            android:layout_height="38dp"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/chewy"
+                android:paddingRight="120dp"
+                android:text="Let's brush my pet"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnOKtaskBROSSE"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="OK"
+                android:textSize="10sp"
+                android:fontFamily="@font/chewy"/>
+        </LinearLayout>
+    </LinearLayout>
+
+        <!--BUTTON GO BACK-->
+        <Button
+            android:id="@+id/btnGOBACKworkSection"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/orange"
+            android:text="Go Back"
+            android:fontFamily="@font/chewy"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
